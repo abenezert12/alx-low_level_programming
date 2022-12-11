@@ -12,11 +12,15 @@ int main(void)
 	int hun;
 	int ten;
 	int bas;
+
 for ( tho = 0 ; tho < 10 ; tho++)
 {
+
 	for (hun = 0 ; hun <= 10 ; hun++)
 	{
+
 		for (ten = 0 ; ten < 10 ; ten++)
+
 		{
 			for ( bas = 0 ; bas < 10 ; bas++)
 			{
@@ -30,7 +34,7 @@ for ( tho = 0 ; tho < 10 ; tho++)
 					putchar(',');
 					putchar(32);
 				}
-				putchar(32);
+				bas++;
 			}
 		
 			
@@ -38,7 +42,7 @@ for ( tho = 0 ; tho < 10 ; tho++)
 
 	 )
 }	
-	Putchar(32);
+	Putchar ('\n');
 	return (0)
 }	
 
