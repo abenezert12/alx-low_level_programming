@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *  main - Entry point
+ * main - Entry point
  *
- *  Return: Always 0 (Succes)
+ * Return: Always 0 (Succes)
  */
 
 int main(void)
@@ -20,8 +20,8 @@ for ( tho = 0 ; tho < 10 ; tho++)
 	{
 
 		for (ten = 0 ; ten < 10 ; ten++)
-
 		{
+
 			for ( bas = 0 ; bas < 10 ; bas++)
 			{
 				putchar('0' + tho);
@@ -36,13 +36,10 @@ for ( tho = 0 ; tho < 10 ; tho++)
 				}
 				bas++;
 			}
-		
-			
 		}
-
-	 )
-}	
-	Putchar ('\n');
-	return (0)
-}	
+	}
+}
+	putchar('\n');
+	return (0);
+}
 
