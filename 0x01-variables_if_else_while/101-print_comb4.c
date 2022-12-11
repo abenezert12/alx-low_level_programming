@@ -22,13 +22,12 @@ int main(void)
 				putchar('0' + n);
 				putchar('0' + i);
 				if (h != 7)
-				{	
+				{
 					putchar(',');
 					putchar(32);
 				}
 				i++;
 			} while (i != 10);
-
 		}
 	}
 	putchar('\n');
