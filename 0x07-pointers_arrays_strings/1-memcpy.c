@@ -5,14 +5,17 @@
  * @dest: input
  * @src: input
  * @n: input
+ *
  * Return: Always 0 (Success)
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+void *_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned int i;
+	unsigned int index;
+	unsigned char *destination = dest;
+	const unsigned char *source = src;
 
-	for (i = 0; i < n; i++)
-		dest[i] = src[i];
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
 
 	return (dest);
 }
