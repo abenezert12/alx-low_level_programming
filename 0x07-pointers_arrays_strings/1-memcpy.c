@@ -1,26 +1,21 @@
-/**
- * file: 1-memcpy.c
- * Auth: Abenezer
- */
-
 #include "main.h"
-
 /**
- * _memcpy - Entry point
- * @dest: input
- * @src: input
- * @n: input
+ *_memcpy - a function that copies memory area
+ *@dest: memory where is stored
+ *@src: memory where is copied
+ *@n: number of bytes
  *
- * Return: Always 0 (Success)
+ *Return: copied memory with n byted changed
  */
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *destination = dest;
-	const unsigned char *source = src;
+	int r = 0;
+	int i = n;
 
-	for (index = 0; index < n; index++)
-		destination[index] = source[index];
-
+	for (; r < i; r++)
+	{
+		dest[r] = src[r];
+		n--;
+	}
 	return (dest);
 }
