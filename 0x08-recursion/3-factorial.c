@@ -1,10 +1,6 @@
-/*                                                                                                                                      
- * 3-factorial.c                                                                                                                        
- * Auth: sam                                                                                                                            
- */                                                                                                                                     
-                                                                                                                                        
 #include "main.h"                                                                                                                       
-                                                                                                                                        
+#include <stdio.h>
+                                                                                                                                      
 /**                                                                                                                                     
  * factorial - Returns the factorial of a given number.                                                                                 
  * @n: The number to find the factorial of.                                                                                             
