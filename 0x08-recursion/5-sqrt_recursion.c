@@ -1,12 +1,5 @@
-/*                                                                                                                                    
- * File: 5-sqrt_recursion.c                                                                                                           
- * Auth: sam tech                                                                                                                     
- */                                                                                                                                   
-                                                                                                                                      
 #include "main.h"                                                                                                                     
-                                                                                                                                      
-int find_sqrt(int num, int root);                                                                                                     
-int _sqrt_recursion(int n);                                                                                                           
+#include <stdio.h>                                                                                                           
                                                                                                                                       
 /**                                                                                                                                   
  * find_sqrt - Finds the natural square root of an inputted number.                                                                   
