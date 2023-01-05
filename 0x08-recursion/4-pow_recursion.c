@@ -1,9 +1,5 @@
-/*                                                                                                                                      
- * File: 4-pow_recursion.c                                                                                                              
- * Auth: sam                                                                                                                            
- */                                                                                                                                     
-                                                                                                                                        
 #include "main.h"                                                                                                                       
+#include <stdio.h>
                                                                                                                                         
 /**                                                                                                                                     
  * _pow_recursion - Returns the value of x raised to the power of y.                                                                    
