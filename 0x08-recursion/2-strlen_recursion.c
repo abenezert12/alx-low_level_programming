@@ -1,10 +1,6 @@
-/*                                                                                                                                      
- * File: 2-strlen_recursion.c                                                                                                           
- * Auth: smone                                                                                                                          
- */                                                                                                                                     
-                                                                                                                                        
-#include "main.h"                                                                                                                       
-                                                                                                                                        
+#include "main.h"
+#include <stdio.h>
+                                                                                                                                       
 /**                                                                                                                                     
  * _strlen_recursion - Returns the length of a string.                                                                                  
  * @s: The string to be measured.                                                                                                       
