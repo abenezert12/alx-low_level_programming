@@ -1,5 +1,6 @@
 #include "main.h"                                                                                                                     
 #include <stdio.h>
+
 /**                                                                                                                                   
  * strlen_no_wilds - Returns the length of a string,                                                                                  
  * ignoring wildcard characters.                                                                                    
