@@ -1,7 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
-
 /**
  * create_array - main entry
  * @size: size input
@@ -10,7 +9,6 @@
  */
 char *create_array(unsigned int size, char c)
 {
-
 	char *array;
 	unsigned int i;
 
@@ -23,5 +21,4 @@ char *create_array(unsigned int size, char c)
 		array[i] = c;
 
 	return (array);
-
 }
