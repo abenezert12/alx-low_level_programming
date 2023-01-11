@@ -1,3 +1,5 @@
+#!/bin/bash
+
 /**
  * source_0 - Source 0
  * Return: Always 0
