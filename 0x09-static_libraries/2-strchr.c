@@ -2,8 +2,8 @@
  #include "main.h"
 
 /**
- * _strchr - checks for character in a string
- * @s: pointer to array
+ * _strchr - Entry point
+ * @s: input
  * @c: input
  * Return: Always 0 (Success)
  */
