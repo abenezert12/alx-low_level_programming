@@ -1,3 +1,9 @@
+ #!/bin/bash
+ #include "main.h"
+
+/**
+ * _strchr - checks for character in a string
+ * @s: pointer to array
  * @c: input
  * Return: Always 0 (Success)
  */
