@@ -1,21 +1,23 @@
 #include "lists.h"
 
 /**
- * print_number - Prints an integer.
- * @n: The integer to be printed.
+ * reverse_listint - prints a listint_t linked list.
+ * @head: pointer to the list.
+ * Return: number of nodes in the list.
  */
-void print_number(int n)
+size_t print_listint_safe(const listint_t *head)
 {
-	unsigned int num = n;
+	size_t pichu = 0;
+	const listint_t *aux_node = head;
 
-	if (n < 0)
+	if (!head)
+		exit(98);
+
+	while (aux_node)
 	{
-		_putchar('-');
-		num = -num;
+		printf("[%p] %i\n", (void *)aux_node, aux_node->n);
+		aux_node = aux_node->next;
+		pichu++;
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
+	return (pichu);
 }
