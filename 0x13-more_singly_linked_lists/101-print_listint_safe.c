@@ -4,47 +4,35 @@
 #include <stdio.h>
 
 /**
- * looped_listint_count - Counts the number of unique nodes.
- * @head: A pointer to the head of the listint_t.
+ * main - check the code for Holberton School students.
  *
- * Return: If the list is not looped - 0. Otherwise - the number of unique nodes in the list.
+ * Return: Always 0.
  */
-size_t looped_listint_count(listint_t *head)
+int main(void)
 {
-	listint_t *tortoise, *hare;
-	size_t nodes = 1;
+	listint_t *head;
+	listint_t *head2;
+	listint_t *node;
 
-	if (head == NULL || head->next == NULL)
-		return (0);
-
-	tortoise = head->next;
-	hare = (head->next)->next;
-
-	while (hare)
-	{
-		if (tortoise == hare)
-		{
-			tortoise = head;
-			while (tortoise != hare)
-			{
-				nodes++;
-				tortoise = tortoise->next;
-				hare = hare->next;
-			}
-
-			tortoise = tortoise->next;
-			while (tortoise != hare)
-			{
-				nodes++;
-				tortoise = tortoise->next;
-			}
-
-			return (nodes);
-		}
-
-		tortoise = tortoise->next;
-		hare = (hare->next)->next;
-	}
-
+	head2 = NULL;
+	add_nodeint(&head2, 0);
+	add_nodeint(&head2, 1);
+	add_nodeint(&head2, 2);
+	add_nodeint(&head2, 3);
+	add_nodeint(&head2, 4);
+	add_nodeint(&head2, 98);
+	add_nodeint(&head2, 402);
+	add_nodeint(&head2, 1024);
+	print_listint_safe(head2);
+	head = NULL;
+	node = add_nodeint(&head, 0);
+	add_nodeint(&head, 1);
+	add_nodeint(&head, 2);
+	add_nodeint(&head, 3);
+	add_nodeint(&head, 4);
+	node->next = add_nodeint(&head, 98);
+	add_nodeint(&head, 402);
+	add_nodeint(&head, 1024);
+	print_listint_safe(head);
 	return (0);
 }
