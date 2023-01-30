@@ -1,4 +1,8 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
 /**
  * get_nodeint_at_index - add new node
  * @head: node head
