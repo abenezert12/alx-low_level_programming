@@ -3,16 +3,11 @@
 #include <string.h>
 #include <stdio.h>
 
-size_t looped_listint_count(listint_t *head);
-size_t free_listint_safe(listint_t **h);
-
 /**
- * looped_listint_count - Counts the number of unique nodes
- *                      in a looped listint_t linked list.
- * @head: A pointer to the head of the listint_t to check.
+ * looped_listint_count - Counts the number of unique nodes.
+ * @head: A pointer to the head of the listint_t.
  *
- * Return: If the list is not looped - 0.
- *         Otherwise - the number of unique nodes in the list.
+ * Return: If the list is not looped - 0. Otherwise - the number of unique nodes in the list.
  */
 size_t looped_listint_count(listint_t *head)
 {
