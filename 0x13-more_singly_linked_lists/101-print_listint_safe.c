@@ -1,37 +1,21 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - function that prints a safe linked listint with a loop.
- * @head: data type double pointer the head/next node
- * Return: new_node
+ * print_number - Prints an integer.
+ * @n: The integer to be printed.
  */
-size_t print_listint_safe(const listint_t *head)
+void print_number(int n)
 {
-	const listint_t *tmp_n = NULL;
-	const listint_t *l_n = NULL;
-	size_t counter = 0;
-	size_t new_n;
+	unsigned int num = n;
 
-	tmp_n = head;
-	while (tmp_n)
+	if (n < 0)
 	{
-		printf("[%p] %d\n", (void *)tmp_n, tmp_n->n);
-		counter++;
-		tmp_n = tmp_n->next;
-		l_n = head;
-		new_n = 0;
-		while (new_n < counter)
-		{
-			if (tmp_n == l_n)
-			{
-				printf("-> [%p] %d\n", (void *)tmp_n, tmp_n->n);
-				return (counter);
-			}
-			l_n = l_n->next;
-			new_n++;
-		}
-		if (!head)
-			exit(98);
+		_putchar('-');
+		num = -num;
 	}
-	return (counter);
+
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
