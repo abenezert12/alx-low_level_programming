@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a text file and prints it to the POSIX standard output
+ * read_textfile - reads a text file and prints it.
  * @filename: type char filename
  * @letters: type size_t letters
  * Return: if cannot be oppened or read 0, if is NULL 0, if writes fail 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-
 	int fd;
 	ssize_t rd, wr;
 	char *buf;
