@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
 /**
  * append_text_to_file - appends text
  * @filename: the file
