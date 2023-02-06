@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <elf.h>
 #include "main.h"
+
 /**
  * get_type - determine file type
  * @ehdr: pointer to struct of ELF header features
@@ -33,6 +33,7 @@ void get_type(Elf64_Ehdr *ehdr)
  * main - entry point for program to get header of ELF file
  * @argc: arg of count
  * @argv: arg of array
+ 
  * Return: 1 on success, error code on failure
  */
 int main(int argc, char *argv[])
