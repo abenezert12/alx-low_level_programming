@@ -1,2 +1,3 @@
-lists.h:
+#include "lists.h"
+
 906609
