@@ -1,7 +1,4 @@
 #include "hash_tables.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 
 /**
  * hash_table_create - A function that creates a hash table
@@ -11,7 +8,7 @@
  *         Otherwise - a pointer to the new hash table
  */
 
-hash_table_t *ht(unsigned long int size)
+hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *hash_table_created;
 	unsigned long int i;
